@@ -18,6 +18,30 @@ class MyApp extends StatelessWidget {
         ) ,),
         backgroundColor:Color.fromARGB(255, 76, 33, 89),
         ),
+        body: Container(child: Column(children: [
+          Row(children: [
+            Container(
+              padding: EdgeInsets.all(20),decoration: BoxDecoration(color: Colors.black),
+
+              child: const Column(children: [Icon(Icons.male, size: 20, color: Colors.white,),
+              Text('Male', style: TextStyle(
+                color: Colors.white
+              ),)
+              
+              ],),
+            ), 
+            Container(
+              padding: EdgeInsets.all(20),decoration: BoxDecoration(color: Colors.black),
+
+              child: const Column(children: [Icon(Icons.male, size: 20, color: Colors.white,),
+              Text('Male', style: TextStyle(
+                color: Colors.white
+              ),)
+              
+              ],),
+            )
+          ],)
+        ],),),
       ),
     );
   }

@@ -1,4 +1,3 @@
-fun main() {
     val originalPrice = 100.0
     val discountPercentage = 0.6
     val threshold = 0.5 
@@ -16,4 +15,3 @@ fun main() {
     println("Original Price: $originalPrice")
     println("Discount Percentage: ${discountPercentage * 100}%")
     println("Final Price: $finalPrice")
-}

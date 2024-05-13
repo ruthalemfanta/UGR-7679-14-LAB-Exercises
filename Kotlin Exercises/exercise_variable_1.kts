@@ -1,4 +1,3 @@
-fun operation() {
     println("Enter the first number:")
     val number1 = readLine()?.toDoubleOrNull()
 
@@ -8,20 +7,12 @@ fun operation() {
     println("Enter the operation (+, -, *, /):")
     val operation = readLine()
 
-    if (number1 == null || number2 == null || operation == null) {
-        println("Invalid input")
-        return
-    }
-
     val result = when (operation) {
-        "+" -> number1 + number2
-        "-" -> number1 - number2
-        "*" -> number1 * number2
-        "/" -> number1 / number2
-        else -> throw IllegalArgumentException("Invalid operation")
+        "+" -> number1?.plus(number2 ?: 0.0)
+        "-" -> number1?.minus(number2 ?: 0.0)
+        "*" -> number1?.times(number2 ?: 0.0)
+        "/" -> number1?.div(number2 ?: 1.0)
+        else -> null
     }
 
     println("Result: $result")
-}
-
-operation()

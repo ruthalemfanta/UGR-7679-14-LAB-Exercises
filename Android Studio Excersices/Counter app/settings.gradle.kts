@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CounterAppJetpackCompose"
+rootProject.name = "androidAss"
 include(":app")
  

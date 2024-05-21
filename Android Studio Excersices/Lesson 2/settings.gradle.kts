@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CounterAppJetpackCompose"
+rootProject.name = "ComposeTutorial"
 include(":app")
  
